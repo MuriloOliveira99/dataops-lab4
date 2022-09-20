@@ -22,7 +22,7 @@ async def upload_s3(url, bucket, key, s3, mpu):
     return await asyncio.gather(*tasks)
 
 def lambda_handler(event, context):
-    # url que virá pelo parâmetro
+    # url que virá pelo parâmetro!
     url = event['url']
     # nome do bucket para upload
     bucket = 'dataops-dados-murilooliveira'
